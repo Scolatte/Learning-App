@@ -49,6 +49,11 @@ public class LessonManager : Singleton<LessonManager>
         Cheats();
     }
 
+    IEnumerator LessonSession()
+    {
+        yield return new WaitForSeconds(5);
+    }
+
     private void Cheats()
     {
         if (Input.GetKeyDown(KeyCode.A))
