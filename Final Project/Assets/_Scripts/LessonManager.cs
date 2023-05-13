@@ -63,5 +63,9 @@ public class LessonManager : Singleton<LessonManager>
         {
             AddToContainer(currentLesson.pages[0].parts[4]);
         }
+        else if (Input.GetKeyDown(KeyCode.F))
+        {
+            AddToContainer(currentLesson.pages[0].parts[3]);
+        }
     }
 }
