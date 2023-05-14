@@ -51,7 +51,7 @@ public class LessonManager : Singleton<LessonManager>
 
     IEnumerator LessonSession()
     {
-        yield return new WaitForSeconds(5);
+        yield return new WaitForSeconds(2);
     }
 
     private void Cheats()
