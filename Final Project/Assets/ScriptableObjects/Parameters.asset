@@ -54,3 +54,29 @@ MonoBehaviour:
       - "\xDC\xE7\xFCnc\xFC Cevap"
       - "D\xF6rd\xFCnc\xFC Cevap"
     parts: []
+  - type: 0
+    quiz:
+      question: 
+      correctAnswerID: 0
+      answers: []
+    parts:
+    - Text: "C# programlama dilinde de\u011Fi\u015Fkenler verileri saklamak ve i\u015Flemek
+        i\xE7in kullan\u0131l\u0131r. "
+      image: {fileID: 0}
+    - Text: "De\u011Fi\u015Fkenler belirli bir isimle tan\u0131mlan\u0131r ve bir
+        t\xFCr\xFC olur. "
+      image: {fileID: 0}
+    - Text: "De\u011Fi\u015Fkenler, programlama dilindeki en temel yap\u0131 ta\u015Flar\u0131ndan
+        biridir ve C# programlama dilinde de\u011Fi\u015Fkenlerin kullan\u0131m\u0131
+        olduk\xE7a esnektir."
+      image: {fileID: 0}
+  - type: 1
+    quiz:
+      question: "Bu \xF6rnek bir quiz sorusudur"
+      correctAnswerID: 0
+      answers:
+      - Birinci Cevap
+      - "\u0130kinci Cevap"
+      - "\xDC\xE7\xFCnc\xFC Cevap"
+      - "D\xF6rd\xFCnc\xFC Cevap"
+    parts: []

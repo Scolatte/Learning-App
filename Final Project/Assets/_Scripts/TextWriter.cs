@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using System;
 
 public class TextWriter : Singleton<TextWriter>
 {
@@ -9,6 +10,9 @@ public class TextWriter : Singleton<TextWriter>
     private float lastCharTime = Mathf.NegativeInfinity;
 
     [HideInInspector] public bool isWriting = false;
+
+    private string currentText;
+    private TextMeshProUGUI currentTextMeshPro = null;
 
     public void WriteSomething(string _text, TextMeshProUGUI _textMeshPro)
     {
@@ -20,6 +24,9 @@ public class TextWriter : Singleton<TextWriter>
     {
         isWriting = true;
 
+        currentText = _text;
+        currentTextMeshPro = _textMeshPro;
+
         char[] text = _text.ToCharArray();
 
         _textMeshPro.text = "";
@@ -30,6 +37,19 @@ public class TextWriter : Singleton<TextWriter>
             yield return new WaitForSeconds(timeBetweenChars);
         }
 
+        currentText = "";
+        currentTextMeshPro = null;
+
         isWriting = false;
+    }
+
+    public void WriteItInstant()
+    {
+        StopAllCoroutines();
+        isWriting = false;
+        currentTextMeshPro.text = currentText;
+
+        currentText = "";
+        currentTextMeshPro = null;
     }
 }

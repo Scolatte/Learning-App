@@ -17,13 +17,21 @@ public class LessonManager : Singleton<LessonManager>
     public int currentPageID = 0;
     public int currentPartID = 0;
 
+    private List<GameObject> containers = new List<GameObject>();
+
     public void AddToContainer(LessonPart part)
     {
-        if (TextWriter.Instance.isWriting) return;
+        if (TextWriter.Instance.isWriting)
+        {
+            TextWriter.Instance.WriteItInstant();
+            return;
+        }
 
         GameObject g = new GameObject("item" + Random.Range(1, 1000));
         g.transform.parent = Container.transform;
-       
+
+        containers.Add(g);
+
         g.AddComponent<RectTransform>();
         g.AddComponent<CanvasRenderer>();
 
@@ -71,19 +79,19 @@ public class LessonManager : Singleton<LessonManager>
         //MenuController.Instance.OpenMenu("LessonPage");
 
         isOnLesson = true;
-        StartPage(currentLesson.pages[0]);
-
-        
-    }
-
-    public void EndLesson()
-    {
-        isOnLesson = false;
+        StartPage(currentLesson.pages[0]);    
     }
 
     public void StartPage(LessonPage _page)
     {
         Debug.Log("Page Started");
+
+        foreach (var item in containers)
+        {
+            Destroy(item);
+        }
+
+        containers.Clear();
 
         isOnPage = true;
 
@@ -105,6 +113,14 @@ public class LessonManager : Singleton<LessonManager>
     public void NextPage()
     {
         currentPageID++;
+
+        if (currentLesson.pages.Count == currentPageID)
+        {
+            // Ders Bitiyo
+            EndLesson();
+            return;
+        }
+
         StartPage(currentLesson.pages[currentPageID]);
     }
 
@@ -124,6 +140,17 @@ public class LessonManager : Singleton<LessonManager>
         isOnPage = false;
         currentPartID = 0;
         NextPage();
+    }
+
+    public void EndLesson()
+    {
+        isOnLesson = false;
+
+        currentLesson = null;
+        currentPageID = 0;
+        currentPartID = 0;
+
+        MenuController.Instance.OpenMenu("MainMenu");
     }
 
     private void Cheats()
