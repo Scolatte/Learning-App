@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using System.Linq;
 
-public class MenuController : MonoBehaviour
+public class MenuController : Singleton<MenuController>
 {
     public List<Menu> menus = new List<Menu>();
 

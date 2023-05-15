@@ -10,6 +10,12 @@ public class LessonManager : Singleton<LessonManager>
 
     public Lesson currentLesson = null;
 
+    [HideInInspector] public bool isOnLesson = false;
+    [HideInInspector] public bool isOnPage = false;
+
+    public int currentPageID = 0;
+    public int currentPartID = 0;
+
     public void AddToContainer(LessonPart part)
     {
         if (TextWriter.Instance.isWriting) return;
@@ -44,17 +50,54 @@ public class LessonManager : Singleton<LessonManager>
         r.sizeDelta = new Vector2(r.sizeDelta.x, Container.transform.childCount * 110f);
     }
 
+    public void ScreenTap()
+    {
+        
+    }
+
     private void Update()
     {
         Cheats();
     }
 
-    IEnumerator LessonSession()
+    public void StartLesson()
     {
-        // Start Of lesson
-        yield return new WaitForSeconds(2);
+        MenuController.Instance.OpenMenu("LessonPage");
+        isOnLesson = true;
+        StartPage(currentLesson.pages[0]);
+    }
 
-        // End Of Lesson
+    public void EndLesson()
+    {
+        isOnLesson = false;
+    }
+
+    public void StartPage(LessonPage _page)
+    {
+        isOnPage = true;
+        AddToContainer(currentLesson.pages[currentPageID].parts[0]);
+    }
+
+    private void OnPage()
+    {
+        
+    }
+
+    public void NextPage()
+    {
+        currentPageID++;
+        StartPage(currentLesson.pages[currentPageID]);
+    }
+
+    public void NextPart()
+    {
+        currentPartID++;
+        AddToContainer(currentLesson.pages[currentPageID].parts[currentPartID]);
+    }
+
+    public void EndPage()
+    {
+        isOnPage = false;
     }
 
     private void Cheats()
