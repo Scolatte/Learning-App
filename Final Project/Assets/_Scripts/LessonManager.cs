@@ -7,6 +7,7 @@ using UnityEngine.UI;
 public class LessonManager : Singleton<LessonManager>
 {
     public GameObject Container;
+    public GameObject QuizPage;
 
     public Lesson currentLesson = null;
 
@@ -93,6 +94,8 @@ public class LessonManager : Singleton<LessonManager>
                 break;
             case PageType.Quiz:
                 //Ekrana Quizi Getircek
+                QuizPage.SetActive(true);
+                QuizManager.Instance.StartQuiz(_page.quiz);
                 break;
             default:
                 break;
