@@ -48,11 +48,15 @@ public class LessonManager : Singleton<LessonManager>
 
         RectTransform r = Container.GetComponent<RectTransform>();
         r.sizeDelta = new Vector2(r.sizeDelta.x, Container.transform.childCount * 110f);
+
+        Debug.Log("Container Added");
+
+        currentPartID++;
     }
 
     public void ScreenTap()
     {
-        
+        NextPart();
     }
 
     private void Update()
@@ -62,9 +66,13 @@ public class LessonManager : Singleton<LessonManager>
 
     public void StartLesson()
     {
-        MenuController.Instance.OpenMenu("LessonPage");
+        Debug.Log("Lesson Started");
+        //MenuController.Instance.OpenMenu("LessonPage");
+
         isOnLesson = true;
         StartPage(currentLesson.pages[0]);
+
+        
     }
 
     public void EndLesson()
@@ -74,13 +82,21 @@ public class LessonManager : Singleton<LessonManager>
 
     public void StartPage(LessonPage _page)
     {
-        isOnPage = true;
-        AddToContainer(currentLesson.pages[currentPageID].parts[0]);
-    }
+        Debug.Log("Page Started");
 
-    private void OnPage()
-    {
-        
+        isOnPage = true;
+
+        switch (_page.type)
+        {
+            case PageType.Lesson:
+                AddToContainer(currentLesson.pages[currentPageID].parts[0]);
+                break;
+            case PageType.Quiz:
+                //Ekrana Quizi Getircek
+                break;
+            default:
+                break;
+        }
     }
 
     public void NextPage()
@@ -91,13 +107,20 @@ public class LessonManager : Singleton<LessonManager>
 
     public void NextPart()
     {
-        currentPartID++;
+        if (currentLesson.pages[currentPageID].parts.Count == currentPartID)
+        {
+            EndPage();
+            return;
+        }
+
         AddToContainer(currentLesson.pages[currentPageID].parts[currentPartID]);
     }
 
     public void EndPage()
     {
         isOnPage = false;
+        currentPartID = 0;
+        NextPage();
     }
 
     private void Cheats()
