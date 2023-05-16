@@ -78,13 +78,17 @@ public class LessonManager : Singleton<LessonManager>
         Debug.Log("Lesson Started");
         //MenuController.Instance.OpenMenu("LessonPage");
 
+        LessonProgressBar.Instance.SetBarItems(currentLesson.pages.Count);
+
         isOnLesson = true;
-        StartPage(currentLesson.pages[0]);    
+        StartPage(currentLesson.pages[0]); 
     }
 
     public void StartPage(LessonPage _page)
     {
         Debug.Log("Page Started");
+
+        LessonProgressBar.Instance.SetCurrentPage(currentPageID);
 
         foreach (var item in containers)
         {
