@@ -98,7 +98,6 @@ public class LessonManager : Singleton<LessonManager>
         containers.Clear();
 
         isOnPage = true;
-        isOnPage = true;
 
         switch (_page.type)
         {
