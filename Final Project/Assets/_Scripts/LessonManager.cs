@@ -159,18 +159,6 @@ public class LessonManager : Singleton<LessonManager>
 
     private void Cheats()
     {
-        if (Input.GetKeyDown(KeyCode.A))
-        {
-            AddToContainer(currentLesson.pages[0].parts[0]);
-        }
-        else if (Input.GetKeyDown(KeyCode.S))
-        {
-            AddToContainer(currentLesson.pages[0].parts[1]);
-        }
-        else if (Input.GetKeyDown(KeyCode.D))
-        {
-            AddToContainer(currentLesson.pages[0].parts[4]);
-        }
-       
+
     }
 }
