@@ -10,7 +10,7 @@ public class LessonButton : MonoBehaviour
 
     public void Click()
     {
-        
+        // Open Lesson by its id
 
         MenuController.Instance.OpenMenu("LessonPage");
     }
