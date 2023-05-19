@@ -13,7 +13,8 @@ public class LessonListManager : Singleton<LessonListManager>
     {
         for (int i = 0; i < lessonList.Count; i++)
         {
-
+            /// Instantiate Lesson with ID to Name
+            /// Initialize Lesson
         }
     }
 }
