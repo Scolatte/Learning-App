@@ -10,9 +10,13 @@ public class LessonButton : MonoBehaviour
 
     public void Click()
     {
-        // Open Lesson by its id
+        int id = int.Parse(gameObject.name);
+
+        LessonManager.Instance.currentLesson = LessonListManager.Instance.lessonList[id];
 
         MenuController.Instance.OpenMenu("LessonPage");
+
+        LessonManager.Instance.StartLesson();
     }
 
     public void Initialize(Lesson _lesson)
