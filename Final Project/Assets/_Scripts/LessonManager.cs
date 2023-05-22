@@ -68,11 +68,6 @@ public class LessonManager : Singleton<LessonManager>
         NextPart();
     }
 
-    private void Update()
-    {
-        Cheats();
-    }
-
     public void StartLesson()
     {
         Debug.Log("Lesson Started");
@@ -155,10 +150,5 @@ public class LessonManager : Singleton<LessonManager>
         currentPartID = 0;
 
         MenuController.Instance.OpenMenu("MainMenu");
-    }
-
-    private void Cheats()
-    {
-
     }
 }
