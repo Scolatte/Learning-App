@@ -10,11 +10,6 @@ public class LessonListManager : Singleton<LessonListManager>
 
     public List<Lesson> lessonList = new List<Lesson>();
 
-    public void Start()
-    {
-        InitializeLessons();
-    }
-
     public void InitializeLessons()
     {
         RectTransform r = containerGO.GetComponent<RectTransform>();

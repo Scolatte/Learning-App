@@ -8,6 +8,7 @@ public class LessonManager : Singleton<LessonManager>
 {
     public GameObject Container;
     public GameObject QuizPage;
+    public GameObject EndPageGO;
 
     public Lesson currentLesson = null;
 
@@ -149,6 +150,6 @@ public class LessonManager : Singleton<LessonManager>
         currentPageID = 0;
         currentPartID = 0;
 
-        MenuController.Instance.OpenMenu("MainMenu");
+        EndPageGO.SetActive(true);
     }
 }
