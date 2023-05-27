@@ -6,12 +6,23 @@ using UnityEngine.UI;
 public class LessonListManager : Singleton<LessonListManager>
 {
     public GameObject lessonButtonPrefab;
+    public GameObject lessonButtonLockPrefab;
     public GameObject containerGO;
 
     public List<Lesson> lessonList = new List<Lesson>();
 
+    public List<RectTransform> lessonButtonsRTs = new List<RectTransform>();
+
     public void InitializeLessons()
     {
+        //Clearing
+        foreach (RectTransform rt in lessonButtonsRTs)
+        {
+            Destroy(rt.gameObject);
+        }
+        lessonButtonsRTs.Clear();
+
+        //Calculating
         RectTransform r = containerGO.GetComponent<RectTransform>();
         VerticalLayoutGroup layoutGroup = containerGO.GetComponentInParent<VerticalLayoutGroup>();
 
@@ -23,14 +34,31 @@ public class LessonListManager : Singleton<LessonListManager>
 
         r.sizeDelta = new Vector2(r.sizeDelta.x, calculatedHeight);
 
+        //Creating
         for (int i = 0; i < lessonList.Count; i++)
         {
-            GameObject go = Instantiate(lessonButtonPrefab);
-            go.name = i.ToString();
+            if (DataManager.Instance.IsLessonUnlocked(i))
+            {
+                // Lesson
 
-            go.transform.parent = containerGO.transform;
+                GameObject go = Instantiate(lessonButtonPrefab);
+                go.name = i.ToString();
 
-            go.GetComponent<LessonButton>().Initialize(lessonList[i]);
+                go.transform.parent = containerGO.transform;
+
+                go.GetComponent<LessonButton>().Initialize(lessonList[i]);
+
+                lessonButtonsRTs.Add(go.GetComponent<RectTransform>());
+            }
+            else
+            {
+                // Lock
+
+                GameObject go = Instantiate(lessonButtonLockPrefab);
+                go.transform.parent = containerGO.transform;
+                lessonButtonsRTs.Add(go.GetComponent<RectTransform>());
+            }
+            
         }
     }
 }

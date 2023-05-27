@@ -1974,11 +1974,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lessonButtonPrefab: {fileID: 2564331684621588023, guid: e31b3816117cb9b429f456b153af8d13, type: 3}
+  lessonButtonLockPrefab: {fileID: 4480232500335144554, guid: 508b1ed550d92e147a1e1b0bb970c706, type: 3}
   containerGO: {fileID: 1903573650}
   lessonList:
   - {fileID: 11400000, guid: 217dad8cb15397e44a57230fe08025db, type: 2}
   - {fileID: 11400000, guid: d8768aa0a13a11f48930a1ca9ae19837, type: 2}
   - {fileID: 11400000, guid: 217dad8cb15397e44a57230fe08025db, type: 2}
+  lessonButtonsRTs: []
 --- !u!1 &875753703
 GameObject:
   m_ObjectHideFlags: 0
