@@ -6,6 +6,8 @@ using UnityEngine.UI;
 
 public class LessonManager : Singleton<LessonManager>
 {
+    public TextMeshProUGUI lessonNameTMP;
+
     public GameObject Container;
     public GameObject QuizPage;
     public GameObject EndPageGO;
@@ -15,10 +17,19 @@ public class LessonManager : Singleton<LessonManager>
     [HideInInspector] public bool isOnLesson = false;
     [HideInInspector] public bool isOnPage = false;
 
+    public int currentLessonID = 0;
     public int currentPageID = 0;
     public int currentPartID = 0;
 
     private List<GameObject> containers = new List<GameObject>();
+
+    public void InitializeLesson(Lesson _lesson, int _lessonID)
+    {
+        currentLesson = _lesson;
+        currentLessonID = _lessonID;
+
+        lessonNameTMP.text = _lesson.lessonName;
+    }
 
     public void AddToContainer(LessonPart part)
     {
@@ -40,7 +51,13 @@ public class LessonManager : Singleton<LessonManager>
         {
             g.AddComponent<Image>();
             g.GetComponent<Image>().sprite = part.image;
-           
+            g.GetComponent<Image>().SetNativeSize();
+
+            float temp = g.GetComponent<RectTransform>().sizeDelta.y / g.GetComponent<RectTransform>().sizeDelta.x;
+            Vector2 calculatedImageSize = new Vector2(250f, (250f * temp));
+
+            g.GetComponent<RectTransform>().sizeDelta = calculatedImageSize;
+
         }
         else if (part.Text != "")
         {
@@ -144,12 +161,29 @@ public class LessonManager : Singleton<LessonManager>
 
     public void EndLesson()
     {
+        QuitLesson();
+
+        SaveLesson();
+
+        EndPageGO.SetActive(true);
+    }
+
+    private void SaveLesson()
+    {
+        DataManager.Instance.SaveLessonLock(currentLessonID + 1, true);
+    }
+
+    public void QuitLesson()
+    {
+        if (TextWriter.Instance.isWriting)
+        {
+            ScreenTap();
+        }
+
         isOnLesson = false;
 
         currentLesson = null;
         currentPageID = 0;
         currentPartID = 0;
-
-        EndPageGO.SetActive(true);
     }
 }

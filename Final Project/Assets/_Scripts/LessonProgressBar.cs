@@ -25,6 +25,11 @@ public class LessonProgressBar : Singleton<LessonProgressBar>
 
     public void SetBarItems(int _pageCount)
     {
+        foreach (var item in rectTransforms)
+        {
+            Destroy(item.gameObject);
+        }
+
         rectTransforms.Clear();
 
         for (int i = 0; i < _pageCount; i++)

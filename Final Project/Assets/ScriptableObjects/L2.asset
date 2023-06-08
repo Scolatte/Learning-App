@@ -1,0 +1,127 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f4cd3768fd7f0b4db1741122f7852d2, type: 3}
+  m_Name: L2
+  m_EditorClassIdentifier: 
+  lessonName: "De\u011Fi\u015Fkenler ve Veri Tipleri"
+  pages:
+  - type: 0
+    quiz:
+      question: 
+      correctAnswerID: 0
+      answers: []
+    parts:
+    - Text: "De\u011Fi\u015Fkenler:"
+      image: {fileID: 0}
+    - Text: "De\u011Fi\u015Fkenler, bir isimle tan\u0131mlanan ve bir de\u011Fer
+        veya veri t\xFCr\xFCn\xFC temsil eden bellek alanlar\u0131d\u0131r. "
+      image: {fileID: 0}
+    - Text: "De\u011Fi\u015Fkenler, program i\xE7indeki verileri saklamak, manip\xFCle
+        etmek ve kullanmak i\xE7in kullan\u0131l\u0131r."
+      image: {fileID: 0}
+    - Text: "Bir de\u011Fi\u015Fkenin de\u011Feri program\u0131n y\xFCr\xFCt\xFClmesi
+        s\u0131ras\u0131nda de\u011Fi\u015Ftirilebilir. "
+      image: {fileID: 0}
+    - Text: "C# dilinde de\u011Fi\u015Fkenlerin belirli bir t\xFCr\xFC olmal\u0131d\u0131r."
+      image: {fileID: 0}
+  - type: 0
+    quiz:
+      question: 
+      correctAnswerID: 0
+      answers: []
+    parts:
+    - Text: 'Veri Tipleri:'
+      image: {fileID: 0}
+    - Text: "C# dilinde \xE7e\u015Fitli veri tipleri bulunur."
+      image: {fileID: 0}
+    - Text: "Her veri tipi, de\u011Fi\u015Fkenlerin ne t\xFCr verileri depolayabilece\u011Fini
+        ve hangi t\xFCr i\u015Flemler yapabilece\u011Fini belirler. "
+      image: {fileID: 0}
+  - type: 0
+    quiz:
+      question: 
+      correctAnswerID: 0
+      answers: []
+    parts:
+    - Text: "C# dilinde yayg\u0131n olarak kullan\u0131lan baz\u0131 veri tipleri:"
+      image: {fileID: 0}
+    - Text: "1. Tam Say\u0131 Tipleri:\r\n    - int: Tam say\u0131lar\u0131 (-2,147,483,648
+        ile 2,147,483,647 aras\u0131nda) temsil eder.\r\n    - long: B\xFCy\xFCk
+        tam say\u0131lar\u0131 temsil eder (-9,223,372,036,854,775,808 ile 9,223,372,036,854,775,807
+        aras\u0131nda)."
+      image: {fileID: 0}
+    - Text: "2. Ondal\u0131k Say\u0131 Tipleri:\r\n    - float: Tek hassasiyetli
+        ondal\u0131k say\u0131lar\u0131 temsil eder.\r\n    - double: \xC7ift hassasiyetli
+        ondal\u0131k say\u0131lar\u0131 temsil eder.\r\n    - decimal: Finansal hesaplamalar
+        gibi y\xFCksek hassasiyet gerektiren ondal\u0131k say\u0131lar\u0131 temsil
+        eder."
+      image: {fileID: 0}
+  - type: 0
+    quiz:
+      question: 
+      correctAnswerID: 0
+      answers: []
+    parts:
+    - Text: "3. Mant\u0131ksal Tipler:\r\n    - bool: Do\u011Fru veya yanl\u0131\u015F
+        de\u011Ferlerini temsil eder."
+      image: {fileID: 0}
+    - Text: "4. Karakter Tipleri:\r\n    - char: Tek bir karakteri temsil eder."
+      image: {fileID: 0}
+    - Text: "5. Metin Tipleri:\r\n    - string: Metinleri temsil eder. String veri
+        tipi de\u011Fi\u015Ftirilemez (immutable) oldu\u011Fu i\xE7in de\u011Ferleri
+        \xFCzerinde de\u011Fi\u015Fiklik yapmak yeni bir string nesnesi olu\u015Fturur."
+      image: {fileID: 0}
+    - Text: 
+      image: {fileID: 21300000, guid: 1cff8eb5c98230146ad1b984c3b201c0, type: 3}
+  - type: 1
+    quiz:
+      question: "C# dilinde de\u011Fi\u015Fkenler hangi ama\xE7la kullan\u0131l\u0131r?"
+      correctAnswerID: 1
+      answers:
+      - "\u0130\u015Flem ve hesaplama yapmak i\xE7in"
+      - "Veri saklamak ve kullanmak i\xE7in"
+      - "Dosya ve klas\xF6rleri y\xF6netmek i\xE7in"
+      - "\u0130nternet taray\u0131c\u0131s\u0131 olu\u015Fturmak i\xE7in"
+    parts: []
+  - type: 1
+    quiz:
+      question: "C# dilinde hangi veri tipi ondal\u0131k say\u0131lar\u0131 temsil
+        etmek i\xE7in kullan\u0131l\u0131r?"
+      correctAnswerID: 3
+      answers:
+      - double
+      - string
+      - bool
+      - int
+    parts: []
+  - type: 1
+    quiz:
+      question: "A\u015Fa\u011F\u0131daki C# veri tiplerinden hangisi mant\u0131ksal
+        de\u011Ferleri temsil etmek i\xE7in kullan\u0131l\u0131r?"
+      correctAnswerID: 2
+      answers:
+      - char
+      - int
+      - bool
+      - float
+    parts: []
+  - type: 1
+    quiz:
+      question: "A\u015Fa\u011F\u0131daki C# veri tiplerinden hangisi metin de\u011Ferlerini
+        temsil etmek i\xE7in kullan\u0131l\u0131r?"
+      correctAnswerID: 0
+      answers:
+      - string
+      - decimal
+      - bool
+      - int
+    parts: []

@@ -1,0 +1,109 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f4cd3768fd7f0b4db1741122f7852d2, type: 3}
+  m_Name: L1
+  m_EditorClassIdentifier: 
+  lessonName: C# Nedir?
+  pages:
+  - type: 0
+    quiz:
+      question: 
+      correctAnswerID: 0
+      answers: []
+    parts:
+    - Text: "Microsoft taraf\u0131ndan geli\u015Ftirilen ve genellikle Windows uygulamalar\u0131n\u0131n
+        ve web tabanl\u0131 hizmetlerin geli\u015Ftirilmesinde kullan\u0131lan, modern
+        bir nesne y\xF6nelimli programlama dilidir."
+      image: {fileID: 0}
+    - Text: "C#, temel olarak .NET Framework veya .NET Core gibi platformlar \xFCzerinde
+        \xE7al\u0131\u015F\u0131r ve geni\u015F bir yelpazede uygulama geli\u015Ftirme
+        alanlar\u0131nda kullan\u0131labilir."
+      image: {fileID: 0}
+  - type: 0
+    quiz:
+      question: 
+      correctAnswerID: 0
+      answers: []
+    parts:
+    - Text: "C#, pop\xFClerlik kazanan bir dil olmas\u0131n\u0131n yan\u0131 s\u0131ra,
+        bir\xE7ok \xF6zellik ve avantaja sahiptir:"
+      image: {fileID: 0}
+    - Text: "Nesne Y\xF6nelimli Programlama (OOP): C#, nesne y\xF6nelimli programlaman\u0131n
+        t\xFCm avantajlar\u0131n\u0131 sunar. Nesne tabanl\u0131 bir yakla\u015F\u0131m
+        benimser ve s\u0131n\u0131flar, nesneler ve miras gibi OOP kavramlar\u0131n\u0131
+        destekler."
+      image: {fileID: 0}
+    - Text: "G\xFC\xE7l\xFC Tip G\xFCvenli\u011Fi: C#, tip g\xFCvenli bir dil olarak
+        bilinir. Yani, de\u011Fi\u015Fkenlerin t\xFCrleri derleme zaman\u0131nda
+        kontrol edilir ve bu sayede hatalar\u0131n erken tespit edilmesi sa\u011Flan\u0131r."
+      image: {fileID: 0}
+    - Text: "B\xFCy\xFCk Ekosistem: C#, Microsoft taraf\u0131ndan desteklenen ve
+        zengin bir ekosisteme sahip olan bir dil olarak \xF6ne \xE7\u0131kar. Bu
+        ekosistemde, geli\u015Ftiriciler i\xE7in geni\u015F bir k\xFCt\xFCphane ve
+        ara\xE7 seti bulunur."
+      image: {fileID: 0}
+  - type: 0
+    quiz:
+      question: 
+      correctAnswerID: 0
+      answers: []
+    parts:
+    - Text: "\xC7apraz Platform Deste\u011Fi: C#, .NET Core sayesinde \xE7apraz platform
+        deste\u011Fi sunar. Bu, C# kodunun Windows, macOS ve Linux gibi farkl\u0131
+        i\u015Fletim sistemlerinde \xE7al\u0131\u015Fabilmesini sa\u011Flar."
+      image: {fileID: 0}
+    - Text: "Zengin K\xFCt\xFCphane Deste\u011Fi: C# geli\u015Ftiricileri, .NET Framework
+        ve .NET Core'un sundu\u011Fu geni\u015F k\xFCt\xFCphane deste\u011Fi sayesinde
+        \xE7e\u015Fitli i\u015Flevleri kolayca kullanabilir. Bu k\xFCt\xFCphaneler,
+        dosya i\u015Fleme, veritaban\u0131 eri\u015Fimi, a\u011F programlama, kullan\u0131c\u0131
+        arabirimleri ve daha fazlas\u0131 gibi alanlarda haz\u0131r \xE7\xF6z\xFCmler
+        sunar."
+      image: {fileID: 0}
+    - Text: "\u0130yi Bir Performans: C#, y\xFCksek verimlilik ve iyi performans
+        sa\u011Flamak i\xE7in tasarlanm\u0131\u015Ft\u0131r. Yap\u0131s\u0131 ve
+        derleme s\xFCreci, h\u0131zl\u0131 ve etkili bir \u015Fekilde \xE7al\u0131\u015Fabilmesini
+        sa\u011Flar."
+      image: {fileID: 0}
+    - Text: "C#, hem ba\u015Flang\u0131\xE7 d\xFCzeyindeki geli\u015Ftiriciler hem
+        de deneyimli profesyoneller i\xE7in uygun bir dil olup, geni\u015F bir uygulama
+        yelpazesinde kullan\u0131labilmektedir."
+      image: {fileID: 0}
+  - type: 1
+    quiz:
+      question: C# nedir?
+      correctAnswerID: 0
+      answers:
+      - Bir programlama dilidir.
+      - "Bir veritaban\u0131 y\xF6netim sistemidir."
+      - "Bir i\u015Fletim sistemi platformudur."
+      - "Bir metin d\xFCzenleyicisidir."
+    parts: []
+  - type: 1
+    quiz:
+      question: "C# hangi \u015Firket taraf\u0131ndan geli\u015Ftirilmi\u015Ftir?"
+      correctAnswerID: 1
+      answers:
+      - Apple
+      - Microsoft
+      - Google
+      - IBM
+    parts: []
+  - type: 1
+    quiz:
+      question: "C# ile a\u015Fa\u011F\u0131dakilerden hangisi yap\u0131lamaz?"
+      correctAnswerID: 3
+      answers:
+      - "Web uygulamalar\u0131 geli\u015Ftirmek"
+      - "Mobil uygulamalar geli\u015Ftirmek"
+      - "Veritaban\u0131 y\xF6netimi yapmak"
+      - "Donan\u0131m tasarlamak"
+    parts: []

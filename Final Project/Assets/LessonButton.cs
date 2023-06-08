@@ -12,7 +12,7 @@ public class LessonButton : MonoBehaviour
     {
         int id = int.Parse(gameObject.name);
 
-        LessonManager.Instance.currentLesson = LessonListManager.Instance.lessonList[id];
+        LessonManager.Instance.InitializeLesson(LessonListManager.Instance.lessonList[id], id);
 
         MenuController.Instance.OpenMenu("LessonPage");
 

@@ -1,0 +1,122 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f4cd3768fd7f0b4db1741122f7852d2, type: 3}
+  m_Name: L3
+  m_EditorClassIdentifier: 
+  lessonName: "De\u011Fi\u015Fken Tan\u0131mlama Kurallar\u0131"
+  pages:
+  - type: 0
+    quiz:
+      question: 
+      correctAnswerID: 0
+      answers: []
+    parts:
+    - Text: "\u0130simlendirme Kurallar\u0131:"
+      image: {fileID: 0}
+    - Text: "De\u011Fi\u015Fken isimleri, harf veya alt \xE7izgi (_) ile ba\u015Flamal\u0131d\u0131r."
+      image: {fileID: 0}
+    - Text: "\u0130simler, harf, rakam ve alt \xE7izgi (_) karakterlerini i\xE7erebilir."
+      image: {fileID: 0}
+    - Text: "B\xFCy\xFCk ve k\xFC\xE7\xFCk harfler aras\u0131nda ayr\u0131m yap\u0131l\u0131r
+        (case-sensitive). \xD6rne\u011Fin, \"sayi\" ve \"Sayi\" iki farkl\u0131 de\u011Fi\u015Fken
+        ismidir."
+      image: {fileID: 0}
+    - Text: 
+      image: {fileID: 21300000, guid: c22d70aadee6d12408a5647d6a69bdfc, type: 3}
+    - Text: "Burada baz\u0131 yanl\u0131\u015F tan\u0131mlamalar g\xF6sterilmi\u015Ftir.
+        Bu tan\u0131mlamalar hata verecektir."
+      image: {fileID: 0}
+  - type: 0
+    quiz:
+      question: 
+      correctAnswerID: 0
+      answers: []
+    parts:
+    - Text: 'Anahtar Kelimeler:'
+      image: {fileID: 0}
+    - Text: "Anahtar kelimeler (keywords), dilin kendisi taraf\u0131ndan ayr\u0131lm\u0131\u015F
+        ve \xF6zel olarak kullan\u0131lan kelimelerdir. Bu nedenle, de\u011Fi\u015Fken
+        isimlerinde anahtar kelimeler kullan\u0131lamaz. \xD6rne\u011Fin, \"int\"
+        veya \"string\" gibi."
+      image: {fileID: 0}
+    - Text: "Veri T\xFCr\xFC:"
+      image: {fileID: 0}
+    - Text: "De\u011Fi\u015Fkenler, bir veri t\xFCr\xFC ile tan\u0131mlanmal\u0131d\u0131r.
+        Veri t\xFCr\xFC, de\u011Fi\u015Fkenin hangi t\xFCr verileri tutaca\u011F\u0131n\u0131
+        belirler. \xD6rne\u011Fin, \"int\" veya \"string\" gibi."
+      image: {fileID: 0}
+    - Text: "\u0130nitialization (Ba\u015Flatma):"
+      image: {fileID: 0}
+    - Text: "De\u011Fi\u015Fkenler, tan\u0131mlama s\u0131ras\u0131nda bir de\u011Ferle
+        ba\u015Flat\u0131labilir veya daha sonra bir de\u011Fer atanabilir. \xD6rne\u011Fin:"
+      image: {fileID: 0}
+    - Text: 
+      image: {fileID: 21300000, guid: 152ff250ac09af34ba33423deaec36bc, type: 3}
+  - type: 0
+    quiz:
+      question: 
+      correctAnswerID: 0
+      answers: []
+    parts:
+    - Text: 'Scope (Kapsam):'
+      image: {fileID: 0}
+    - Text: "De\u011Fi\u015Fkenlerin kapsam\u0131, eri\u015Filebilirlik s\xFCresini
+        belirtir. C# dilinde de\u011Fi\u015Fkenler, belirli bir kapsam i\xE7inde
+        tan\u0131mlanmal\u0131d\u0131r."
+      image: {fileID: 0}
+    - Text: "\xD6rne\u011Fin, bir blok i\xE7inde (if, for d\xF6ng\xFCs\xFC, fonksiyon
+        vb.) tan\u0131mlanan bir de\u011Fi\u015Fken, o blok d\u0131\u015F\u0131nda
+        eri\u015Filemez."
+      image: {fileID: 0}
+    - Text: 
+      image: {fileID: 21300000, guid: f349659d83aaa564d94e2f413845dd65, type: 3}
+    - Text: "\u0130lklendirme:"
+      image: {fileID: 0}
+    - Text: "C# dilinde de\u011Fi\u015Fkenler, tan\u0131mland\u0131klar\u0131 anda
+        bir de\u011Ferle ba\u015Flat\u0131lmayabilir. Bu durumda, de\u011Fi\u015Fkenin
+        varsay\u0131lan de\u011Feri atan\u0131r. \xD6rne\u011Fin, say\u0131sal bir
+        de\u011Fi\u015Fken \"int\" tipinde tan\u0131mland\u0131\u011F\u0131nda, varsay\u0131lan
+        de\u011Feri 0'd\u0131r."
+      image: {fileID: 0}
+  - type: 1
+    quiz:
+      question: "C# dilinde de\u011Fi\u015Fkenler i\xE7in ge\xE7erli olan a\u015Fa\u011F\u0131daki
+        hangi kural do\u011Frudur?"
+      correctAnswerID: 2
+      answers:
+      - "De\u011Fi\u015Fken isimleri say\u0131yla ba\u015Flamal\u0131d\u0131r."
+      - "De\u011Fi\u015Fken isimleri bo\u015Fluk i\xE7erebilir."
+      - "De\u011Fi\u015Fken isimleri b\xFCy\xFCk/k\xFC\xE7\xFCk harf duyarl\u0131d\u0131r."
+      - "De\u011Fi\u015Fken isimleri sadece bir karakterden olu\u015Fabilir."
+    parts: []
+  - type: 1
+    quiz:
+      question: "A\u015Fa\u011F\u0131dakilerden hangisi ge\xE7erli bir C# de\u011Fi\u015Fken
+        ismi de\u011Fildir?"
+      correctAnswerID: 0
+      answers:
+      - 123Number
+      - myVariable
+      - _name
+      - myVariable123
+    parts: []
+  - type: 1
+    quiz:
+      question: "C# dilindeki de\u011Fi\u015Fken tan\u0131mlama kurallar\u0131na
+        g\xF6re, a\u015Fa\u011F\u0131dakilerden hangisi ge\xE7erli bir "
+      correctAnswerID: 3
+      answers:
+      - int 1Number = 5;
+      - float = 3.14f;
+      - string "hello" = "Merhaba";
+      - bool isAvailable = true;
+    parts: []

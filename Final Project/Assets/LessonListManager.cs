@@ -32,7 +32,7 @@ public class LessonListManager : Singleton<LessonListManager>
             + layoutGroup.spacing * (lessonList.Count - 1) 
             + lessonList.Count * lessonButtonPrefab.GetComponent<RectTransform>().sizeDelta.y;
 
-        r.sizeDelta = new Vector2(r.sizeDelta.x, calculatedHeight);
+        r.sizeDelta = new Vector2(r.sizeDelta.x, calculatedHeight - 200);
 
         //Creating
         for (int i = 0; i < lessonList.Count; i++)

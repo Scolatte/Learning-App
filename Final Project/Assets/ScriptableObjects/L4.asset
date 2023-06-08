@@ -1,0 +1,137 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f4cd3768fd7f0b4db1741122f7852d2, type: 3}
+  m_Name: L4
+  m_EditorClassIdentifier: 
+  lessonName: "Operat\xF6rler"
+  pages:
+  - type: 0
+    quiz:
+      question: 
+      correctAnswerID: 0
+      answers: []
+    parts:
+    - Text: "C# dilinde kullan\u0131lan operat\xF6rler, de\u011Ferleri i\u015Flemek,
+        hesaplamalar yapmak ve mant\u0131ksal kararlar vermek i\xE7in kullan\u0131lan
+        sembollerdir."
+      image: {fileID: 0}
+    - Text: 
+      image: {fileID: 21300000, guid: 914bb32d9cbddf248b493adeb6808fdb, type: 3}
+    - Text: "Aritmetik Operat\xF6rler:"
+      image: {fileID: 0}
+    - Text: " (+) (Toplama): \u0130ki de\u011Feri toplar.\r\n (-) (\xC7\u0131karma):
+        \u0130ki de\u011Feri \xE7\u0131kar\u0131r.\r\n (*) (\xC7arpma): \u0130ki
+        de\u011Feri \xE7arpar.\n (/) (B\xF6lme): \u0130ki de\u011Feri b\xF6ler.\r\n
+        (%) (Mod\xFCl): \u0130ki de\u011Ferin b\xF6lme i\u015Fleminden kalan\u0131n\u0131
+        verir."
+      image: {fileID: 0}
+    - Text: 
+      image: {fileID: 21300000, guid: 99c05968bebb98340bb6d4423a210dab, type: 3}
+  - type: 0
+    quiz:
+      question: 
+      correctAnswerID: 0
+      answers: []
+    parts:
+    - Text: "\u0130li\u015Fkisel Operat\xF6rler:"
+      image: {fileID: 0}
+    - Text: "(==) (E\u015Fitlik): \u0130ki de\u011Fer e\u015Fitse \"true\" d\xF6ner.\r\n(!=)
+        (E\u015Fit De\u011Fil): \u0130ki de\u011Fer e\u015Fit de\u011Filse \"true\"
+        d\xF6ner.\r\n(>) (B\xFCy\xFCk): Sol taraf\u0131ndaki de\u011Fer, sa\u011F
+        taraf\u0131ndaki de\u011Ferden b\xFCy\xFCkse \"true\" d\xF6ner.\r\n(<) (K\xFC\xE7\xFCk):
+        Sol taraf\u0131ndaki de\u011Fer, sa\u011F taraf\u0131ndaki de\u011Ferden
+        k\xFC\xE7\xFCkse \"true\" d\xF6ner.\r\n(>=) (B\xFCy\xFCk E\u015Fit): Sol
+        taraf\u0131ndaki de\u011Fer, sa\u011F taraf\u0131ndaki de\u011Fere e\u015Fit
+        veya b\xFCy\xFCkse \"true\" d\xF6ner.\r\n(<=) (K\xFC\xE7\xFCk E\u015Fit):
+        Sol taraf\u0131ndaki de\u011Fer, sa\u011F taraf\u0131ndaki de\u011Fere e\u015Fit
+        veya k\xFC\xE7\xFCkse \"true\" d\xF6ner."
+      image: {fileID: 0}
+    - Text: 
+      image: {fileID: 21300000, guid: effa878c70430ff4db6647df0ad1306a, type: 3}
+  - type: 0
+    quiz:
+      question: 
+      correctAnswerID: 0
+      answers: []
+    parts:
+    - Text: "Mant\u0131ksal Operat\xF6rler:"
+      image: {fileID: 0}
+    - Text: "(&&)(Ve): \u0130ki ko\u015Ful da \"true\" ise \"true\" d\xF6ner.\r\n(||)
+        (Veya): \u0130ki ko\u015Fullardan en az biri \"true\" ise \"true\" d\xF6ner.\r\n(!)
+        (De\u011Fil): Ko\u015Fulun tersini al\u0131r."
+      image: {fileID: 0}
+    - Text: 
+      image: {fileID: 21300000, guid: 72e2bc498e7979a4485dbf0e0abdea8e, type: 3}
+  - type: 0
+    quiz:
+      question: 
+      correctAnswerID: 0
+      answers: []
+    parts:
+    - Text: "Atama Operat\xF6rleri:"
+      image: {fileID: 0}
+    - Text: "(=) (E\u015Fittir): Bir de\u011Feri bir de\u011Fi\u015Fkene atar.\r\n(+=)
+        (Toplama ve Atama): Bir de\u011Feri bir de\u011Fi\u015Fkene ekler ve sonucu
+        de\u011Fi\u015Fkene atar.\r\n(-=) (\xC7\u0131karma ve Atama): Bir de\u011Feri
+        bir de\u011Fi\u015Fkenden \xE7\u0131kar\u0131r ve sonucu de\u011Fi\u015Fkene
+        atar.\r\n(*=) (\xC7arpma ve Atama): Bir de\u011Feri bir de\u011Fi\u015Fkene
+        \xE7arpar ve sonucu de\u011Fi\u015Fkene atar.\r\n(/=) (B\xF6lme ve Atama):
+        Bir de\u011Feri bir de\u011Fi\u015Fkene b\xF6ler ve sonucu de\u011Fi\u015Fkene
+        atar.\r\n(%=) (Mod\xFCl ve Atama): Bir de\u011Ferin b\xF6lme i\u015Fleminden
+        kalan\u0131n\u0131 al\u0131r ve sonucu de\u011Fi\u015Fkene atar."
+      image: {fileID: 0}
+    - Text: 
+      image: {fileID: 21300000, guid: 120a2862863d05847bde119e5dd529e9, type: 3}
+  - type: 1
+    quiz:
+      question: "C# dilinde hangi operat\xF6r, bir de\u011Feri di\u011Ferine e\u015Fit
+        veya daha k\xFC\xE7\xFCkse true d\xF6ner?"
+      correctAnswerID: 2
+      answers:
+      - '>'
+      - <
+      - <=
+      - '>='
+    parts: []
+  - type: 1
+    quiz:
+      question: "C# dilinde hangi operat\xF6r, bir de\u011Fi\u015Fkenin de\u011Ferini
+        bir birim azaltmak i\xE7in kullan\u0131l\u0131r?"
+      correctAnswerID: 3
+      answers:
+      - ++
+      - +=
+      - -=
+      - --
+    parts: []
+  - type: 1
+    quiz:
+      question: "A\u015Fa\u011F\u0131daki C# ifadesinde hangi operat\xF6r kullan\u0131lm\u0131\u015Ft\u0131r?\r\nbool
+        isTrue = (x || y);"
+      correctAnswerID: 1
+      answers:
+      - VE
+      - VEYA
+      - "DE\u011E\u0130L"
+      - "E\u015E\u0130TL\u0130K"
+    parts: []
+  - type: 1
+    quiz:
+      question: "Hangi operat\xF6r, iki de\u011Ferin ikisinden birisi true oldu\u011Funda
+        true d\xF6ner?"
+      correctAnswerID: 1
+      answers:
+      - '&&'
+      - '||'
+      - ==
+      - '!='
+    parts: []
